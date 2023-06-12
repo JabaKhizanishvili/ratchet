@@ -35,6 +35,10 @@ class ComposerStaticInit19af1cc8f9b7e3780af5d121cadeb40f
         array (
             'Psr\\Http\\Message\\' => 17,
         ),
+        'N' => 
+        array (
+            'NoahBuscher\\Macaw\\' => 18,
+        ),
         'M' => 
         array (
             'MyApp\\' => 6,
@@ -94,6 +98,10 @@ class ComposerStaticInit19af1cc8f9b7e3780af5d121cadeb40f
         array (
             0 => __DIR__ . '/..' . '/psr/http-factory/src',
             1 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'NoahBuscher\\Macaw\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/noahbuscher/macaw',
         ),
         'MyApp\\' => 
         array (

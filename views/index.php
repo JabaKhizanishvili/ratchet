@@ -9,8 +9,11 @@
 </head>
 
 <body>
+    <h1>chat</h1>
 
-<script src='./script/app.js'></script>
+    <input id="msg" type="text" required>
+
+ <script src="./script/app.js"></script>
 </body>
 
 </html>
