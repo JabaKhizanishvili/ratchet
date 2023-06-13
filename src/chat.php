@@ -27,7 +27,8 @@ class Chat implements MessageComponentInterface {
                 // The sender is not the receiver, send to each client connected
                 $client->send($msg);
             }else{
-                $client->send( json_encode(['status-code' => 'success', 'status- message'=> $msg]));
+                // $client->send( json_encode(['status-code' => 'success', 'message'=> $msg]));
+                $client->send( $msg );
             }
         }
     }

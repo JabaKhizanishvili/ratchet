@@ -1,6 +1,10 @@
 <?php
 
 require_once __DIR__.'/router.php';
+define('root',$_SERVER['DOCUMENT_ROOT']. '/');
+
+include_once(root . 'libraries/MysqliDb.php');
+$db = new MysqliDb ('localhost', 'root', '', 'chat');
 
 // ##################################################
 // ##################################################
@@ -26,6 +30,11 @@ get('/user/$name/$last_name', 'views/full_name.php');
 // The $type will be available in product.php
 // The $color will be available in product.php
 get('/product/$type/color/$color', 'product.php');
+
+
+get('/msg',function(){
+  echo 'asd';
+});
 
 // A route with a callback
 get('/callback', function(){

@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     header('Content-Type: application/json');
 
     // Send the response
-    echo json_encode($response);
+    // echo json_encode($response);
 
 
     $data = Array (
@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     );
 
 
-$id = $db->insert ('massages', $data);
+// $id = $db->insert ('massages', $data);
 }
 
 

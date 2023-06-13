@@ -4,7 +4,10 @@ conn.onopen = function(e) {
 };
 
 conn.onmessage = (e)=>{
-    
+    // console.log(e.data);
+    let box = document.querySelector('.box');
+    // var parsedResponse = JSON.parse(e.data);
+    box.innerHTML += `<p class='mt-2'>${e.data}</p>` ;
   }
 
 
@@ -37,14 +40,16 @@ const data = {
   })
   .then(data => {
     // Handle the response data
-    console.log(data);
+    // console.log(data);
   })
+
   .catch(error => {
     // Handle any errors
     console.error(error);
   });
 
-
+  conn.send(message);
+  msg.value = '';
 
         }
     })
